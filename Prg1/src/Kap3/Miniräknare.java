@@ -102,13 +102,9 @@ class Miniräknare {
         t1 = Double.parseDouble(s1);
         t2 = Double.parseDouble(s2);
         
-        try { t3 = Integer.parseInt(s3);
-        } catch(NumberFormatException e) {
-          JOptionPane.showMessageDialog(null, "Skriv ett tal" );
-          System.exit(0);
-        }
+
         
-        switch (s3) {
+            switch (s3) {
         
             case "+":
                 JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 + t2));
@@ -150,11 +146,12 @@ class Miniräknare {
  
             default:
                 break;
-                
+        }
+       
+        }
       }
     }
-  }
-}
+  
 
     
 
