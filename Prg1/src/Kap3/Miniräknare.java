@@ -10,9 +10,9 @@ class Miniräknare {
     public static void main (String [] args) {
         
         String s1, s2, s3;
-        double t1, t2;
+        double t1, t2, t3;
         
-        s3 = JOptionPane.showInputDialog("Välj räknesätt, dvs +, -, *, /, ^ , root, log, sin, cos eller tan");
+        s3 = JOptionPane.showInputDialog("Välj räknesätt, dvs +, -, *, /, ^, %\n root, log, sin, cos, tan eller ln");
         
         if ("root".equals(s3)) {
             JOptionPane.showMessageDialog(null, "Så här fungerar roten ur:"
@@ -35,7 +35,51 @@ class Miniräknare {
                     + "\n1. Ange ett tal"
                     + "\n2. Skriv sen en koefficient"
                     + "\nEtt exempel: Först åtta sen 90 ger: 8 * 0,9" );
-        }
+        } else if ("sin".equals(s3)) {
+            s1 = JOptionPane.showInputDialog("Skriv ett tal");
+            try { t3 = Integer.parseInt(s1);    
+            } catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Skriv ett tal!");
+                System.exit(0);
+            }
+            t1 = Double.parseDouble(s1);
+            JOptionPane.showMessageDialog(null,"Ditt svar är " + Math.sin(Math.toRadians(t1))); 
+            System.exit(0);
+        } else if ("cos".equals(s3)) {
+            s1 = JOptionPane.showInputDialog("Skriv ett tal");
+            try { t3 = Integer.parseInt(s1);    
+            } catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Skriv ett tal!");
+                System.exit(0);
+            }
+            t1 = Double.parseDouble(s1);
+            JOptionPane.showMessageDialog(null,"Ditt svar är " + Math.cos(Math.toRadians(t1))); 
+            System.exit(0);
+        } else if ("tan".equals(s3)) {
+            s1 = JOptionPane.showInputDialog("Skriv ett tal");
+            try { t3 = Integer.parseInt(s1);    
+            } catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Skriv ett tal!");
+                System.exit(0);
+            }
+            t1 = Double.parseDouble(s1);
+            JOptionPane.showMessageDialog(null,"Ditt svar är " + Math.tan(Math.toRadians(t1))); 
+            System.exit(0);
+        } else if ("ln".equals(s3)) {
+            s1 = JOptionPane.showInputDialog("Skriv ett tal");
+            try {
+                t3 = Integer.parseInt(s1);
+            } catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Skriv ett tal!");
+                System.exit(0);
+            }
+            t1 = Double.parseDouble(s1);
+            JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.log(t1));
+            System.exit(0);
+
+        } 
+        
+       
         
         s1 = JOptionPane.showInputDialog("Skriv ett tal");
         
@@ -92,17 +136,7 @@ class Miniräknare {
             case "%":
                 JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 * (t2/100)));
                break;
-            
-            case "sin":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.sin(Math.toDegrees(t1)));
-                break;
-            case "cos":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.cos(Math.toDegrees(t1)));
-                break;
-            case "tan":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.tan(Math.toDegrees(t1)));
-                break;
-
+ 
             default:
                 break;
                 
