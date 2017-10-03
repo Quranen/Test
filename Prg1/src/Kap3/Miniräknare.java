@@ -10,7 +10,7 @@ class Miniräknare {
     public static void main (String [] args) {
         
         String s1, s2, s3;
-        double t1, t2, t3;
+        double t1, t2, t3, t4;
         
         s3 = JOptionPane.showInputDialog("Välj räknesätt, dvs +, -, *, /, ^, %\n root, log, sin, cos, tan eller ln");
         
@@ -102,9 +102,14 @@ class Miniräknare {
         t1 = Double.parseDouble(s1);
         t2 = Double.parseDouble(s2);
         
-
+        try { t3 = Integer.parseInt(s3);
+        } catch(NumberFormatException e) {
+          JOptionPane.showMessageDialog(null, "Skriv ett tal" );
+          System.exit(0);
+        }
         
         switch (s3) {
+        
             case "+":
                 JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 + t2));
                 break;
@@ -114,6 +119,9 @@ class Miniräknare {
                 break;
                 
             case "/":
+                if (t2 == 0);
+                JOptionPane.showMessageDialog(null, "Det går inte att dividera med noll");
+                System.exit(0);
                 JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 / t2));
                 break;
                          
@@ -126,6 +134,9 @@ class Miniräknare {
                 break;
             
             case "root":
+                if (t1 == 0);
+                JOptionPane.showMessageDialog(null, "Nollte roten av ett tal är inte definierat");
+                System.exit(0);
                 JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.pow(t2, 1.0/t1));
                 break;
                 
