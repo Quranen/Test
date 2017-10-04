@@ -4,6 +4,7 @@
  */
 package Kap3;
 
+import java.util.InputMismatchException;
 import javax.swing.*;
 
 class Miniräknare {
@@ -78,9 +79,7 @@ class Miniräknare {
             System.exit(0);
 
         } 
-        
-       
-        
+  
         s1 = JOptionPane.showInputDialog("Skriv ett tal");
         
         if ("".equals(s1)) {
@@ -103,55 +102,59 @@ class Miniräknare {
         t2 = Double.parseDouble(s2);
         
 
-        
+        try {
             switch (s3) {
         
             case "+":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 + t2));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " + " + t2 + " \nDitt svar är " + Double.toString(t1 + t2));
                 break;
             
             case "-":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 - t2));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " - " + t2 + " \nDitt svar är " + Double.toString(t1 - t2));
                 break;
                 
             case "/":
-                if (t2 == 0);
+                if (t2 == 0) {
                 JOptionPane.showMessageDialog(null, "Det går inte att dividera med noll");
                 System.exit(0);
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 / t2));
+                } else {
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " / " + t2 + " \nDitt svar är " + Double.toString(t1 / t2));
                 break;
-                         
+                }        
             case "*":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 * t2));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " * " + t2 + " \nDitt svar är " + Double.toString(t1 * t2));
                 break;
                 
             case "^":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.pow(t1, t2));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " ^ " + t2 + " \nDitt svar är " + Math.pow(t1, t2));
                 break;
             
             case "root":
-                if (t1 == 0);
+                if (t1 == 0) {
                 JOptionPane.showMessageDialog(null, "Nollte roten av ett tal är inte definierat");
                 System.exit(0);
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Math.pow(t2, 1.0/t1));
+                } else {   
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + '\u2713' + t2 + " \nDitt svar är " + Math.pow(t2, 1.0/t1));
                 break;
-                
+                } 
             case "log":
-                JOptionPane.showMessageDialog(null,"Ditt svar är " + Math.log10(t2)/Math.log10(t1));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + '\u33D2' + t1 + "(" + t2 + ")" + "\nDitt svar är " + Math.log10(t2)/Math.log10(t1));
                 break;
                 
             case "%":
-                JOptionPane.showMessageDialog(null, "Ditt svar är " + Double.toString(t1 * (t2/100)));
+                JOptionPane.showMessageDialog(null,"Dina val leder till: " + t1 + " * " + (t2/100) + " \nDitt svar är " + Double.toString(t1 * (t2/100)));
                break;
  
             default:
                 break;
         }
        
-        }
+        } catch(InputMismatchException ex) {
+           JOptionPane.showMessageDialog(null, "Skriv ett giltigt tal");
       }
     }
-  
+  }
+}
 
     
 
