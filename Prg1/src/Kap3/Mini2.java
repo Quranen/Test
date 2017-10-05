@@ -12,7 +12,7 @@ class Mini2 {
         String s1, s2, s3, s4, s5, s6, s7;
         double d1, d2, d3, d4;
         
-        s1 = JOptionPane.showInputDialog("Hur många termer kommer du att räkna med? (max 5)");
+        s1 = JOptionPane.showInputDialog("Hur många termer kommer du att räkna med? (max 4)");
         
         if ("1".equals(s1)) {
             
@@ -157,6 +157,10 @@ class Mini2 {
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 + d3 * d4));
                   break;
+                  
+                  default:
+                    break;
+
             }
               case "-":
                   switch (s6) {
@@ -172,6 +176,10 @@ class Mini2 {
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 - d3 * d4));
                   break;
+                  
+                  default:
+                    break;
+
             }
               case "/":
                   switch (s6) {
@@ -187,6 +195,10 @@ class Mini2 {
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 / d3 * d4));
                   break;
+                  
+                  default:
+                    break;
+
             }
                   
               case "*":
@@ -203,6 +215,9 @@ class Mini2 {
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 * d3 * d4));
                   break;
+                  
+                  default:
+                    break;
             }
     }     
    }   
