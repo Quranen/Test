@@ -66,63 +66,75 @@ class Mini2 {
               case "+": 
               switch (s4) {
                   case "+":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + Double.toString(d1 + d2 + d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "=" + Double.toString(d1 + d2 + d3));
                   break;
+                  
                   case "-":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + Double.toString(d1 + d2 - d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "=" +  Double.toString(d1 + d2 - d3));
                   break;
+                  
                   case "/":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + Double.toString(d1 + d2 / d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "=" +  Double.toString(d1 + d2 / d3));
                   break;
+                  
                   case "*":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + Double.toString(d1 + d2 * d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "=" +  Double.toString(d1 + d2 * d3));
                   break;
-            }
+            } break;
               case "-":
               switch (s4) {
                   case "+":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + Double.toString(d1 - d2 + d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + "=" +  Double.toString(d1 - d2 + d3));
                   break;
+                  
                   case "-":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + Double.toString(d1 - d2 - d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + "=" +  Double.toString(d1 - d2 - d3));
                   break;
+                  
                   case "/":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + Double.toString( d1 - d2 / d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + "=" +  Double.toString( d1 - d2 / d3));
                   break;
+                  
                   case "*":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + Double.toString( d1 - d2 * d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + "=" +  Double.toString( d1 - d2 * d3));
                   break;    
-            }  
+            } break;
               case "/":
               switch (s4) {
                   case "+":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + Double.toString( d1 / d2 + d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "=" +  Double.toString( d1 / d2 + d3));
                   break;
+                  
                   case "-":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + Double.toString(d1 / d2 - d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "=" +  Double.toString(d1 / d2 - d3));
                   break;
+                  
                   case "/":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + Double.toString(d1 / d2 / d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "=" +  Double.toString(d1 / d2 / d3));
                   break;
+                  
                   case "*":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + Double.toString(d1 / d2 * d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "=" +  Double.toString(d1 / d2 * d3));
                   break;    
-            }
+            } break;
               case "*":
               switch (s4) {
                   case "+":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + Double.toString(d1 * d2 + d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + "=" +  Double.toString(d1 * d2 + d3));
                   break;
+                  
                   case "-":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + Double.toString(d1 * d2 - d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + "=" +  Double.toString(d1 * d2 - d3));
                   break;
+                  
                   case "/":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + Double.toString(d1 * d2 / d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + "=" +  Double.toString(d1 * d2 / d3));
                   break;
+                  
                   case "*":
-                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + Double.toString(d1 * d2 * d3));
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "=" +  Double.toString(d1 * d2 * d3));
                   break;    
-            }
+            } break;
           }
               
           
@@ -148,80 +160,302 @@ class Mini2 {
                   case "+": 
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "+" + d4 + "=" + Double.toString(d1 + d2 + d3 + d4));
                   break;
+                  
                   case "-":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "-" + d4 + "=" + Double.toString(d1 + d2 + d3 - d4));
                   break;
+                  
                   case "/":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "/" + d4 + "=" + Double.toString(d1 + d2 + d3 / d4));
                   break;
+                  
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 + d3 * d4));
                   break;
-                  
-                  default:
-                    break;
+            } break;
 
-            }
               case "-":
                   switch (s6) {
                   case "+": 
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "+" + d4 + "=" + Double.toString(d1 + d2 - d3 + d4));
                   break;
+                  
                   case "-":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "-" + d4 + "=" + Double.toString(d1 + d2 - d3 - d4));
                   break;
+                  
                   case "/":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "/" + d4 + "=" + Double.toString(d1 + d2 - d3 / d4));
                   break;
+                  
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 - d3 * d4));
                   break;
-                  
-                  default:
-                    break;
-
-            }
+            } break;
               case "/":
                   switch (s6) {
                   case "+": 
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "+" + d4 + "=" + Double.toString(d1 + d2 / d3 + d4));
                   break;
+                  
                   case "-":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 + d2 / d3 - d4));
                   break;
+                  
                   case "/":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "/" + d4 + "=" + Double.toString(d1 + d2 / d3 / d4));
                   break;
+                  
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 / d3 * d4));
                   break;
-                  
-                  default:
-                    break;
-
-            }
-                  
+            } break;   
               case "*":
                   switch (s6) {
                   case "+": 
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "+" + d4 + "=" + Double.toString(d1 + d2 * d3 + d4));
                   break;
+                  
                   case "-":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "-" + d4 + "=" + Double.toString(d1 + d2 * d3 - d4));
                   break;
+                  
                   case "/":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "/" + d4 + "=" + Double.toString(d1 + d2 * d3 / d4));
                   break;
+                  
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "+" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 + d2 * d3 * d4));
                   break;
+            } break;
+          
+    }      case "-":
+            switch (s4) {
+              case "+":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + "+" + d4 + "=" + Double.toString(d1 - d2 + d3 + d4));
+                  break;
                   
-                  default:
-                    break;
-            }
-    }     
-   }   
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + "-" + d4 + "=" + Double.toString(d1 - d2 + d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + "/" + d4 + "=" + Double.toString(d1 - d2 + d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 - d2 + d3 * d4));
+                  break;
+            } break;
+              case "-":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + "+" + d4 + "=" + Double.toString(d1 - d2 - d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + "-" + d4 + "=" + Double.toString(d1 - d2 - d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + "/" + d4 + "=" + Double.toString(d1 - d2 - d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 - d2 - d3 * d4));
+                  break;
+            } break;
+              case "/":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + "+" + d4 + "=" + Double.toString(d1 - d2 / d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 - d2 / d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + "/" + d4 + "=" + Double.toString(d1 - d2 / d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 - d2 / d3 * d4));
+                  break;
+            } break;
+              case "*":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + "+" + d4 + "=" + Double.toString(d1 - d2 * d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + "-" + d4 + "=" + Double.toString(d1 - d2 * d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + "/" + d4 + "=" + Double.toString(d1 - d2 * d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "-" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 - d2 * d3 * d4));
+                  break;   
+   } break;
+             
+  }         case "*":
+            switch (s4) {
+              case "+":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + "+" + d4 + "=" + Double.toString(d1 * d2 + d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + "-" + d4 + "=" + Double.toString(d1 * d2 + d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + "/" + d4 + "=" + Double.toString(d1 * d2 + d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 * d2 + d3 * d4));
+                  break;
+            } break;
+              case "-":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + "+" + d4 + "=" + Double.toString(d1 * d2 - d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + "-" + d4 + "=" + Double.toString(d1 * d2 - d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + "/" + d4 + "=" + Double.toString(d1 * d2 - d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 * d2 - d3 * d4));
+                  break;
+            } break;
+              case "/":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + "+" + d4 + "=" + Double.toString(d1 * d2 / d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 * d2 / d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + "/" + d4 + "=" + Double.toString(d1 * d2 / d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 * d2 / d3 * d4));
+                  break;
+            } break;
+              case "*":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "+" + d4 + "=" + Double.toString(d1 * d2 * d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "-" + d4 + "=" + Double.toString(d1 * d2 * d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "/" + d4 + "=" + Double.toString(d1 * d2 * d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 * d2 * d3 * d4));
+                  break;   
+ }
+}   case "/":
+            switch (s4) {
+              case "+":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "+" + d4 + "=" + Double.toString((d1 / d2) + d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 + d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 + d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 + d3 * d4));
+                  break;
+            } break;
+              case "-":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "+" + d4 + "=" + Double.toString((d1 / d2) - d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 - d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 - d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 - d3 * d4));
+                  break;
+            } break;
+              case "/":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "+" + d4 + "=" + Double.toString(d1 / d2 / d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 / d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 / d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 / d3 * d4));
+                  break;
+            } break;
+              case "*":
+                  switch (s6) {
+                  case "+": 
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "+" + d4 + "=" + Double.toString(d1 / d2 * d3 + d4));
+                  break;
+                  
+                  case "-":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 * d3 - d4));
+                  break;
+                  
+                  case "/":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 * d3 / d4));
+                  break;
+                  
+                  case "*":
+                  JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 * d3 * d4));
+                  break;   
+     }
+    }
+   }
   }
  }
 }
+
         
