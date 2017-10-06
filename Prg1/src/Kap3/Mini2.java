@@ -460,18 +460,27 @@ class Mini2 {
             switch (s4) {
               case "+":
                   switch (s6) {
-                  case "+": 
+                  case "+":
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "+" + d4 + "=" + Double.toString((d1 / d2) + d3 + d4));
                   break;
-                  
+                  }
                   case "-":
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 + d3 - d4));
                   break;
-                  
+                  }
                   case "/":
+                  if (d2 == 0 || d4 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {        
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 + d3 / d4));
                   break;
-                  
+                  }
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "+" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 + d3 * d4));
                   break;
@@ -479,17 +488,26 @@ class Mini2 {
               case "-":
                   switch (s6) {
                   case "+": 
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "+" + d4 + "=" + Double.toString((d1 / d2) - d3 + d4));
                   break;
-                  
+                  }
                   case "-":
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 - d3 - d4));
                   break;
-                  
+                  }
                   case "/":
+                  if (d2 == 0 || d4 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {        
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 - d3 / d4));
                   break;
-                  
+                  }
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "-" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 - d3 * d4));
                   break;
@@ -497,38 +515,64 @@ class Mini2 {
               case "/":
                   switch (s6) {
                   case "+": 
+                  if (d2 == 0 || d3 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "+" + d4 + "=" + Double.toString(d1 / d2 / d3 + d4));
                   break;
-                  
+                  }
                   case "-":
+                  if (d2 == 0) || d3 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 / d3 - d4));
                   break;
-                  
+                  }
                   case "/":
+                  if (d2 == 0 || d3 == 0 || d4 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 / d3 / d4));
                   break;
-                  
+                  }
                   case "*":
+                  if (d2 == 0 || d3 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 / d3 * d4));
                   break;
+                  }
             } break;
               case "*":
                   switch (s6) {
                   case "+": 
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "+" + d4 + "=" + Double.toString(d1 / d2 * d3 + d4));
                   break;
-                  
+                  }
                   case "-":
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 * d3 - d4));
                   break;
-                  
+                  }
                   case "/":
+                  if (d2 == 0 || d4 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "/" + d4 + "=" + Double.toString(d1 / d2 * d3 / d4));
                   break;
-                  
+                  }
                   case "*":
+                  if (d2 == 0) {
+                  JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
+                  } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 / d2 * d3 * d4));
-                  break;   
+                  break;
+      }
      }
     }
    }
