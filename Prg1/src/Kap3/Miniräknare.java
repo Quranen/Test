@@ -14,6 +14,12 @@ class Miniräknare {
         double t1, t2, t3, t4;
         
         s3 = JOptionPane.showInputDialog("Välj räknesätt, dvs +, -, *, /, ^, %\n root, log, sin, cos, tan eller ln");
+        try {
+            Double.parseDouble(s3)
+        } catch(NumberFormatException e) {
+           JOptionPane.showMessageDialog(null, "Skriv ett giltigt tal");
+            System.exit(0);
+        }
         
         if ("root".equals(s3)) {
             JOptionPane.showMessageDialog(null, "Så här fungerar roten ur:"
@@ -102,7 +108,7 @@ class Miniräknare {
         t2 = Double.parseDouble(s2);
         
 
-        try {
+       
             switch (s3) {
         
             case "+":
@@ -149,8 +155,6 @@ class Miniräknare {
                 break;
         }
        
-        } catch(InputMismatchException ex) {
-           JOptionPane.showMessageDialog(null, "Skriv ett giltigt tal");
       }
     }
   }
