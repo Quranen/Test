@@ -455,7 +455,7 @@ class Mini2 {
                   case "*":
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "*" + d2 + "*" + d3 + "*" + d4 + "=" + Double.toString(d1 * d2 * d3 * d4));
                   break;   
- }
+ } 
 }   case "/":
             switch (s4) {
               case "+":
@@ -522,7 +522,7 @@ class Mini2 {
                   break;
                   }
                   case "-":
-                  if (d2 == 0) || d3 == 0) {
+                  if (d2 == 0 || d3 == 0) {
                   JOptionPane.showMessageDialog(null,"Det går inte att dividera med noll");
                   } else {
                   JOptionPane.showMessageDialog(null,"Du skrev: " + d1 + "/" + d2 + "/" + d3 + "-" + d4 + "=" + Double.toString(d1 / d2 / d3 - d4));
