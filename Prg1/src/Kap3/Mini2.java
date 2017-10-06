@@ -1,6 +1,7 @@
 /*
- * Skapa en miniräknare som kan ta emot två valfria heltal samt utföra
- * alla fyra räknesätt
+ * Skapa en miniräknare som kan ta emot fyra olika tal (tre operatorer).
+ * Idiotsäkra?
+ * Mer än +-/* ? 
  */
 package Kap3;
 
