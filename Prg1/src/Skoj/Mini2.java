@@ -3,7 +3,7 @@
  * Idiotsäkra?
  * Mer än +-/* ? 
  */
-package Kap3;
+package Skoj;
 
 import java.util.InputMismatchException;
 import javax.swing.*;

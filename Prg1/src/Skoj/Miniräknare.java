@@ -2,7 +2,7 @@
  * Skapa en miniräknare som kan ta emot två valfria heltal samt utföra
  * alla fyra räknesätt
  */
-package Kap3;
+package Skoj;
 
 import java.util.InputMismatchException;
 import javax.swing.*;
