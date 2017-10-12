@@ -19,6 +19,7 @@ class StringKlass {
         
         System.out.println(i);  //Kombination av int och String
         b = "var" + a.charAt(3); //Man räknar från noll, dvs a.charAt (3) ger "g"
+        System.out.println(b);
         
         b = a.substring(7);     //Börjar på position sju och forstätter tills order är slut
         System.out.println(b);
