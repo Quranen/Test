@@ -19,7 +19,8 @@ class Black {
             hus1 = (int)(Math.random() * 13 + 1);
             hus2 = (int)(Math.random() * 13 + 1);
             
-                
+            int[] kort3 = {2,2,2,2};
+            System.out.println(kort3);
             
             
             

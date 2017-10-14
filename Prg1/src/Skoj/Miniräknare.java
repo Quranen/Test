@@ -1,3 +1,4 @@
+
 /*
  * Skapa en miniräknare som kan ta emot två valfria heltal samt utföra
  * alla fyra räknesätt

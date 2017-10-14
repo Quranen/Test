@@ -27,6 +27,13 @@ class Black1 {
             + "\nHusets första kort är: " + hus1);
                   
         }
+                Object[] options = {"Ett till kort", "Stanna", "Dubbla"};
         
+         t2 = JOptionPane.showOptionDialog(null, "Vad vill du göra nu?", "Blackjack", 
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, 
+                null, 
+                options, 
+                options[0]);
+         
     }
 }
