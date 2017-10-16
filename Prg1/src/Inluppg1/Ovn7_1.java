@@ -1,3 +1,4 @@
+//Detta är den mest funktionella versionen av uppgift 7, den andra använder if-satser men fungerar inte lika bra.
 package Inluppg1;
 
 import javax.swing.*;
