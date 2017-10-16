@@ -1,4 +1,4 @@
-package Inluppg1;
+package Skoj;
 
 import javax.swing.*;
 

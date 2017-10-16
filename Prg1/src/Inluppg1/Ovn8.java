@@ -5,11 +5,16 @@ import javax.swing.*;
 class Ovn8 {
     public static void main (String [] args) {
         
-        String s1;
+        String s1, s2;
         
-        s1 = JOptionPane.showInputDialog("Skriv tre tecken");
+        s1 = JOptionPane.showInputDialog("Skriv ett ord");
+        s2 = "";
         
-        JOptionPane.showMessageDialog(null,"I omvänd ordning blir dina tecken: " + s1.charAt(2) + s1.charAt(1) + s1.charAt(0));
+        for (int t = s1.length() - 1; t >= 0; t--) {
+            s2 = s2 + s1.charAt(t);
+        }
+        
+        JOptionPane.showMessageDialog(null,"I omvänd ordning blir ordet: " + s2);
         
     }
 }
